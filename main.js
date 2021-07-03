@@ -1,8 +1,9 @@
 const Discord = require('discord.js')
+require('dotenv').config()
 const client = new Discord.Client()
 const keepAlive = require('./server.js')
 
-const prefix = '<3'
+const prefix = process.env.PREFIX
 
 const fs = require('fs')
 
@@ -42,4 +43,4 @@ client.on('message', (msg) => {
 
 keepAlive()
 
-client.login('ODA1OTI4NTMzNTc0Mjg3NDAx.YBiBbw.qwRrA22c6A6NVbnOXSjr2Tblvpc')
+client.login(process.env.DISC_TOKEN)
