@@ -3,7 +3,7 @@ const express = require('express')
 const server = express()
 
 server.all('/', (req, res) => {
-  res.send("Bot is running!")
+  res.send("Welcome to Sandra's Discord bot!")
 })
 
 const keepAlive = () => {
