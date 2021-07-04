@@ -1,1 +1,1 @@
-Worker: node main.js
+web: npm start main.js
