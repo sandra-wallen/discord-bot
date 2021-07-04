@@ -1,7 +1,8 @@
 module.exports = {
   name: 'ping',
+  aliases: [],
   description: 'this is a ping command',
-  execute(msg, args) {
+  execute(client, msg, args) {
 
     if (msg.member.roles.cache.has('389230321973067777')) {
       msg.channel.send(`${msg.author.toString()} pong`)

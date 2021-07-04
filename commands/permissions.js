@@ -1,7 +1,8 @@
 module.exports = {
   name: 'permissions',
+  aliases: [],
   description: 'list all permissions',
-  execute(msg, args) {
+  execute(client, msg, args) {
 
     const permissions = []
 
